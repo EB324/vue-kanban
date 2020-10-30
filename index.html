@@ -1,0 +1,34 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EC Pipeline</title>
+  <meta name="description" content="EC Pipeline">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./assets/index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-kanban">
+    <div class="container-fluid page-header d-flex justify-content-between align-items-start"><h1>EC Status</h1></div>
+    <div class="kanban-board container-fluid mt-lg-3" id="app">
+      <board></board>
+    </div>
+  </div>
+
+  <!-- Import Vue, development version, includes helpful console warnings -->
+  <script src="https://unpkg.com/vue@next"></script>
+
+  <!-- Import App -->
+  <script src="./main.js"></script>
+
+  <!-- Import Components -->
+  <script src="./components/board.js"></script>
+  <script src="./components/card.js"></script>
+
+  <!-- Mount App -->
+  <script>
+    app.mount('#app')
+  </script>
+
+</body>
